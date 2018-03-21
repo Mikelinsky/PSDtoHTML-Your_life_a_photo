@@ -1,0 +1,243 @@
+@font-face {
+    font-family: "Gotham Rounded Bold";
+    src: url("../fonts/GothamRounded-Bold.otf") format("opentype");
+    src: url("../fonts/GothamRoundedBold_21016.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham Rounded Book";
+    src: url("../fonts/GothamRounded-Book.otf") format("opentype");
+    src: url("../fonts/GothamRoundedBook_21018.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham Rounded Medium";
+    src: url("../fonts/GothamRounded-Medium.otf") format("opentype");
+    src: url("../fonts/GothamRoundedMedium_21022.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Gotham Rounded Light";
+    src: url("../fonts/GothamRounded-Light.otf") format("opentype");
+    src: url("../fonts/GothamRoundedLight_21020.ttf") format("truetype");
+}
+
+//@import "../node_modules/bootstrap/scss/bootstrap";
+* {
+    box-sizing: border-box;
+}
+// VARIABLES
+$colorOnDarkBackground: #ffffff !important;
+$colorSmallHeaders: #16a085 !important;
+$colorParagraph: #373737 !important;
+
+$fontMedium: "Gotham Rounded Medium";
+$fontBook: "Gotham Rounded Book";
+$fontBold: "Gotham Rounded Bold";
+$fontLight: "Gotham Rounded Light";
+
+/*------------------------------------------------------------------
+                            HEADER
+----------------------------------------------------------------*/
+header {
+    height: 100vh;
+    background-image: url("../images/header-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .sticky {
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 90px;
+    }
+// ------------------------NAVIGATION------------------------------
+    nav {
+        height: 130px;
+        transition-duration: 0.5s;  
+        ul {
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+            img {
+                margin: 0 70px;
+            }
+            li {
+                margin: 0 30px;
+                display: inline-block;
+                transition-duration: 1s;
+                &:hover {
+                    transform: scale(1.1); 
+                } 
+                &:hover a {
+                    color: $colorSmallHeaders;
+                }
+                a {    
+                    letter-spacing: 2.4px;        
+                    font-size: 16px;
+                    color: $colorOnDarkBackground;
+                    text-transform: uppercase;
+                    font-family: "Gotham Rounded Medium";
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition-duration: 1s;
+                }
+            }
+        }
+    }
+//-----------------------------HEADLINE-----------------------------------
+    .headline {
+        text-align: center;
+        position: absolute;
+        top: calc(50% - 75px);
+        p {
+            color: $colorOnDarkBackground;
+            font-size: 16px;
+            letter-spacing: 2.4px;
+            font-weight: 500;
+            font-family: $fontLight;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        h1 {
+            color: $colorOnDarkBackground;
+            font-size: 36px;
+            font-weight: 700px;
+            text-transform: uppercase;
+            letter-spacing: 5.4px;
+            font-family: "Gotham Rounded Bold";
+        }
+        button {
+            width: 166px;
+            height: 49px;
+            border-radius: 3px;
+            background-color: $colorSmallHeaders;
+            border: none;
+            color: $colorOnDarkBackground;
+            font-family: $fontLight; 
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            line-height: 49px;
+            cursor: pointer;
+            transition-duration: 1s;
+            &:hover {
+                background-color: #2fd6b5 !important;
+            }
+        }
+    }
+}
+.icon-container {
+    position: absolute;
+    bottom: 26px;
+    left: calc(50% - 60px);
+    img {
+        margin: 0 6px;
+        cursor: pointer;
+        transition-duration: 1s;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+/*---------------------------------------------------------------------------
+                            HAND & PHONE
+---------------------------------------------------------------------*/
+.handWithPhone {
+    background-color: #f5f6f7;
+    background-image: url("../images/handAndPhone.png");
+    background-repeat: no-repeat;
+    background-position: 79% 100%; 
+    padding: 120px 0 90px 120px;
+    div {
+        h4 {
+            font-family: $fontMedium;
+            color: $colorSmallHeaders;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2.7px;
+            margin-bottom: 45px;
+        }
+        p {
+            font-family: $fontBook;
+            color: $colorParagraph;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+            margin-bottom: 49px;
+            b {
+                font-family: $fontBold;
+            }
+        }
+        button {
+            width: 192px;
+            height: 51px;
+            border-radius: 3px;
+            background-color: $colorSmallHeaders;
+            border: none;
+            color: $colorOnDarkBackground;
+            font-family: $fontLight; 
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            line-height: 49px;
+            cursor: pointer;
+            transition-duration: 1s;
+            &:hover {
+                background-color: #2fd6b5 !important;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------------------
+                            CAROUSEL WITH PHONE
+----------------------------------------------------------------------*/
+.carousel {
+    div {
+
+    }
+    .design-container {
+        padding: 140px 0 80px 0;
+        h4 {
+            font-family: $fontMedium;
+            color: $colorSmallHeaders;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2.7px;
+            margin-bottom: 39px;
+        }
+        p {
+            font-family: $fontBook;
+            color: $colorParagraph;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+            margin-bottom: 49px;
+            b {
+                font-family: $fontBold;
+            }
+        }
+        button {
+            width: 192px;
+            height: 51px;
+            background-color: $colorSmallHeaders;
+            border: none;
+            color: $colorOnDarkBackground;
+            font-family: $fontLight; 
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            line-height: 49px;
+            cursor: pointer;
+            transition-duration: 1s;
+            &:hover {
+                background-color: #2fd6b5 !important;
+            }
+        }
+    }
+}
