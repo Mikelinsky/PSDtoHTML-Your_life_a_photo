@@ -65,7 +65,6 @@ header {
       letter-spacing: 2.4px;
       font-weight: 500;
       font-family: "Gotham Rounded Light";
-      font-weight: 500;
       margin-bottom: 25px; }
     header .headline h1 {
       color: #ffffff !important;
@@ -106,13 +105,13 @@ header {
 /*---------------------------------------------------------------------------
                             HAND & PHONE
 ---------------------------------------------------------------------*/
-.handWithPhone {
+.handWithPhone-section {
   background-color: #f5f6f7;
   background-image: url("../images/handAndPhone.png");
   background-repeat: no-repeat;
   background-position: 79% 100%;
   padding: 120px 0 90px 120px; }
-  .handWithPhone div h4 {
+  .handWithPhone-section div h4 {
     font-family: "Gotham Rounded Medium";
     color: #16a085 !important;
     font-size: 18px;
@@ -120,18 +119,17 @@ header {
     text-transform: uppercase;
     letter-spacing: 2.7px;
     margin-bottom: 45px; }
-  .handWithPhone div p {
+  .handWithPhone-section div p {
     font-family: "Gotham Rounded Book";
     color: #373737 !important;
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    font-weight: 300;
     letter-spacing: 1.8px;
     margin-bottom: 49px; }
-    .handWithPhone div p b {
+    .handWithPhone-section div p b {
       font-family: "Gotham Rounded Bold"; }
-  .handWithPhone div button {
+  .handWithPhone-section div button {
     width: 192px;
     height: 51px;
     border-radius: 3px;
@@ -146,15 +144,15 @@ header {
     line-height: 49px;
     cursor: pointer;
     transition-duration: 1s; }
-    .handWithPhone div button:hover {
+    .handWithPhone-section div button:hover {
       background-color: #2fd6b5 !important; }
 
 /*--------------------------------------------------------------------------
                             CAROUSEL WITH PHONE
 ----------------------------------------------------------------------*/
-.carousel .design-container {
-  padding: 140px 0 80px 0; }
-  .carousel .design-container h4 {
+.carousel-section .design-container {
+  padding: 105px 0 52px 0; }
+  .carousel-section .design-container h4 {
     font-family: "Gotham Rounded Medium";
     color: #16a085 !important;
     font-size: 18px;
@@ -162,18 +160,17 @@ header {
     text-transform: uppercase;
     letter-spacing: 2.7px;
     margin-bottom: 39px; }
-  .carousel .design-container p {
+  .carousel-section .design-container p {
     font-family: "Gotham Rounded Book";
     color: #373737 !important;
     font-size: 12px;
     font-weight: 400;
     line-height: 24px;
-    font-weight: 300;
     letter-spacing: 1.8px;
     margin-bottom: 49px; }
-    .carousel .design-container p b {
+    .carousel-section .design-container p b {
       font-family: "Gotham Rounded Bold"; }
-  .carousel .design-container button {
+  .carousel-section .design-container button {
     width: 192px;
     height: 51px;
     background-color: #16a085 !important;
@@ -187,7 +184,49 @@ header {
     line-height: 49px;
     cursor: pointer;
     transition-duration: 1s; }
-    .carousel .design-container button:hover {
+    .carousel-section .design-container button:hover {
       background-color: #2fd6b5 !important; }
+  .carousel-section .design-container .carousel-switch {
+    color: #373737 !important;
+    font-family: "Gotham Rounded Medium";
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin-top: 45px; }
+    .carousel-section .design-container .carousel-switch .swith-icon {
+      text-decoration: none;
+      text-transform: uppercase; }
+    .carousel-section .design-container .carousel-switch .fa {
+      font-size: 25px !important;
+      color: #373737;
+      margin-right: 10px; }
+    .carousel-section .design-container .carousel-switch a {
+      text-decoration: none; }
+.carousel-section .carousel-size {
+  width: 300px;
+  position: absolute;
+  bottom: 0px; }
+
+/*----------------------------------------------------------
+            MINI CAROUSEL
+-------------------------------------------------------*/
+.our-community-section .our-community-headline {
+  text-align: center;
+  display: inline-block; }
+  .our-community-section .our-community-headline h4 {
+    color: #373737 !important;
+    font-family: "Gotham Rounded Medium";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px; }
+  .our-community-section .our-community-headline p {
+    color: #373737 !important;
+    font-family: "Gotham Rounded Medium";
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px; }
 
 /*# sourceMappingURL=style.css.map */

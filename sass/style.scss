@@ -46,7 +46,7 @@ header {
         background-color: rgba(0, 0, 0, 0.8);
         height: 90px;
     }
-// ------------------------NAVIGATION------------------------------
+//                      NAVIGATION
     nav {
         height: 130px;
         transition-duration: 0.5s;  
@@ -80,7 +80,7 @@ header {
             }
         }
     }
-//-----------------------------HEADLINE-----------------------------------
+//                          HEADLINE
     .headline {
         text-align: center;
         position: absolute;
@@ -91,7 +91,6 @@ header {
             letter-spacing: 2.4px;
             font-weight: 500;
             font-family: $fontLight;
-            font-weight: 500;
             margin-bottom: 25px;
         }
         h1 {
@@ -139,7 +138,7 @@ header {
 /*---------------------------------------------------------------------------
                             HAND & PHONE
 ---------------------------------------------------------------------*/
-.handWithPhone {
+.handWithPhone-section {
     background-color: #f5f6f7;
     background-image: url("../images/handAndPhone.png");
     background-repeat: no-repeat;
@@ -161,7 +160,6 @@ header {
             font-size: 12px;
             font-weight: 400;
             line-height: 24px;
-            font-weight: 300;
             letter-spacing: 1.8px;
             margin-bottom: 49px;
             b {
@@ -193,12 +191,9 @@ header {
 /*--------------------------------------------------------------------------
                             CAROUSEL WITH PHONE
 ----------------------------------------------------------------------*/
-.carousel {
-    div {
-
-    }
+.carousel-section {
     .design-container {
-        padding: 140px 0 80px 0;
+        padding: 105px 0 52px 0;
         h4 {
             font-family: $fontMedium;
             color: $colorSmallHeaders;
@@ -214,7 +209,6 @@ header {
             font-size: 12px;
             font-weight: 400;
             line-height: 24px;
-            font-weight: 300;
             letter-spacing: 1.8px;
             margin-bottom: 49px;
             b {
@@ -238,6 +232,58 @@ header {
             &:hover {
                 background-color: #2fd6b5 !important;
             }
+        }
+        .carousel-switch {
+            color: $colorParagraph;
+            font-family: $fontMedium;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            margin-top: 45px;
+            .swith-icon {
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            .fa {
+                font-size: 25px !important;
+                color: #373737;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .carousel-size {
+        width: 300px;
+        position: absolute;
+        bottom: 0px;
+    }
+}
+
+/*----------------------------------------------------------
+            MINI CAROUSEL
+-------------------------------------------------------*/
+.our-community-section {
+    .our-community-headline {
+        text-align: center;
+        display: inline-block; 
+        h4 {
+            color: $colorParagraph;
+            font-family: $fontMedium;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2.4px;
+        }
+        p {
+            color: $colorParagraph;
+            font-family: $fontMedium;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 1.5px;
         }
     }
 }
