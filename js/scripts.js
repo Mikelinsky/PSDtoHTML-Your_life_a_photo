@@ -22,17 +22,9 @@ $(function() {
     }
 });
 //options carousel
-
 $(function() {
-	$('.carousel').carousel({
-		interval: 2000,
-		pause: true
-	});
 	$(".carousel").carousel("pause");
 });
-
-
-
 
 //			phone carousel switches	
 carouselRightSlider[0].addEventListener('click', function() {
