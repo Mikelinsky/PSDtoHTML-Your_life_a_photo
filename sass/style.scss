@@ -266,6 +266,7 @@ header {
             MINI CAROUSEL
 -------------------------------------------------------*/
 .our-community-section {
+    background-color: #f5f6f7;
     .our-community-headline {
         text-align: center;
         display: inline-block; 
@@ -284,6 +285,11 @@ header {
             font-size: 10px;
             font-weight: 500;
             letter-spacing: 1.5px;
+        }
+    }
+    .double-carousel {
+        .layoutImages {
+
         }
     }
 }

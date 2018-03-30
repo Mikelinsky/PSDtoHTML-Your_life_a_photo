@@ -211,22 +211,24 @@ header {
 /*----------------------------------------------------------
             MINI CAROUSEL
 -------------------------------------------------------*/
-.our-community-section .our-community-headline {
-  text-align: center;
-  display: inline-block; }
-  .our-community-section .our-community-headline h4 {
-    color: #373737 !important;
-    font-family: "Gotham Rounded Medium";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2.4px; }
-  .our-community-section .our-community-headline p {
-    color: #373737 !important;
-    font-family: "Gotham Rounded Medium";
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 1.5px; }
+.our-community-section {
+  background-color: #f5f6f7; }
+  .our-community-section .our-community-headline {
+    text-align: center;
+    display: inline-block; }
+    .our-community-section .our-community-headline h4 {
+      color: #373737 !important;
+      font-family: "Gotham Rounded Medium";
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2.4px; }
+    .our-community-section .our-community-headline p {
+      color: #373737 !important;
+      font-family: "Gotham Rounded Medium";
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1.5px; }
 
 /*# sourceMappingURL=style.prefixed.css.map */
