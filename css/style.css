@@ -89,7 +89,8 @@ header {
       cursor: pointer;
       transition-duration: 1s; }
       header .headline button:hover {
-        background-color: #2fd6b5 !important; }
+        background-color: #2fd6b5 !important;
+        transform: scale(1.1); }
 
 .icon-container {
   position: absolute;
@@ -145,7 +146,8 @@ header {
     cursor: pointer;
     transition-duration: 1s; }
     .handWithPhone-section div button:hover {
-      background-color: #2fd6b5 !important; }
+      background-color: #2fd6b5 !important;
+      transform: scale(1.1); }
 
 /*--------------------------------------------------------------------------
                             CAROUSEL WITH PHONE
@@ -185,8 +187,9 @@ header {
     cursor: pointer;
     transition-duration: 1s; }
     .carousel-section .design-container button:hover {
-      background-color: #2fd6b5 !important; }
-  .carousel-section .design-container .carousel-switch {
+      background-color: #2fd6b5 !important;
+      transform: scale(1.1); }
+  .carousel-section .design-container .switch {
     color: #373737 !important;
     font-family: "Gotham Rounded Medium";
     font-size: 12px;
@@ -194,28 +197,35 @@ header {
     text-transform: uppercase;
     letter-spacing: 1.8px;
     margin-top: 45px; }
-    .carousel-section .design-container .carousel-switch .swith-icon {
+    .carousel-section .design-container .switch .swith-icon {
       text-decoration: none;
       text-transform: uppercase; }
-    .carousel-section .design-container .carousel-switch .fa {
-      font-size: 25px !important;
+    .carousel-section .design-container .switch .fa {
+      font-size: 27px !important;
       color: #373737;
       margin-right: 10px; }
-    .carousel-section .design-container .carousel-switch a {
-      text-decoration: none; }
+    .carousel-section .design-container .switch a {
+      text-decoration: none;
+      cursor: pointer; }
 .carousel-section .carousel-size {
   width: 300px;
+  height: 400px;
   position: absolute;
-  bottom: 0px; }
+  bottom: 0px;
+  background-image: url("../images/phone-blue.jpg");
+  background-size: 300px 400px; }
 
 /*----------------------------------------------------------
             MINI CAROUSEL
 -------------------------------------------------------*/
 .our-community-section {
-  background-color: #f5f6f7; }
+  background-color: #f5f6f7;
+  padding: 120px 0; }
   .our-community-section .our-community-headline {
-    text-align: center;
-    display: inline-block; }
+    text-align: center; }
+    .our-community-section .our-community-headline img {
+      margin-top: 25px;
+      margin-bottom: 31px; }
     .our-community-section .our-community-headline h4 {
       color: #373737 !important;
       font-family: "Gotham Rounded Medium";
@@ -223,12 +233,17 @@ header {
       font-weight: 700;
       line-height: 20px;
       text-transform: uppercase;
-      letter-spacing: 2.4px; }
+      letter-spacing: 2.4px;
+      margin-bottom: 24px; }
     .our-community-section .our-community-headline p {
       color: #373737 !important;
       font-family: "Gotham Rounded Medium";
       font-size: 10px;
       font-weight: 500;
       letter-spacing: 1.5px; }
+  .our-community-section .double-carousel .carousel .carousel-inner .layoutImages .imgSize {
+    width: 370px;
+    height: 244px;
+    margin: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */

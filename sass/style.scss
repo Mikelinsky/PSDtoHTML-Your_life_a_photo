@@ -118,6 +118,7 @@ header {
             transition-duration: 1s;
             &:hover {
                 background-color: #2fd6b5 !important;
+                transform: scale(1.1);
             }
         }
     }
@@ -183,6 +184,7 @@ header {
             transition-duration: 1s;
             &:hover {
                 background-color: #2fd6b5 !important;
+                transform: scale(1.1);
             }
         }
     }
@@ -231,9 +233,10 @@ header {
             transition-duration: 1s;
             &:hover {
                 background-color: #2fd6b5 !important;
+                transform: scale(1.1);
             }
         }
-        .carousel-switch {
+        .switch {
             color: $colorParagraph;
             font-family: $fontMedium;
             font-size: 12px;
@@ -246,19 +249,23 @@ header {
                 text-transform: uppercase;
             }
             .fa {
-                font-size: 25px !important;
+                font-size: 27px !important;
                 color: #373737;
                 margin-right: 10px;
             }
             a {
                 text-decoration: none;
+                cursor: pointer;
             }
         }
     }
     .carousel-size {
         width: 300px;
+        height: 400px;
         position: absolute;
         bottom: 0px;
+        background-image: url("../images/phone-blue.jpg");
+        background-size: 300px 400px;
     }
 }
 
@@ -267,9 +274,13 @@ header {
 -------------------------------------------------------*/
 .our-community-section {
     background-color: #f5f6f7;
+    padding: 120px 0;
     .our-community-headline {
-        text-align: center;
-        display: inline-block; 
+        text-align: center; 
+        img {
+        margin-top: 25px; 
+        margin-bottom: 31px;
+        }
         h4 {
             color: $colorParagraph;
             font-family: $fontMedium;
@@ -278,6 +289,7 @@ header {
             line-height: 20px;
             text-transform: uppercase;
             letter-spacing: 2.4px;
+            margin-bottom: 24px;
         }
         p {
             color: $colorParagraph;
@@ -288,8 +300,16 @@ header {
         }
     }
     .double-carousel {
-        .layoutImages {
-
+        .carousel {
+            .carousel-inner {
+                .layoutImages {
+                    .imgSize {
+                        width: 370px; 
+                        height: 244px;
+                        margin: 0 10px; 
+                    }
+                }
+            }
         }
     }
 }

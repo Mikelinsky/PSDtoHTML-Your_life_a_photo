@@ -1,15 +1,50 @@
 // phone carousel elements
-var carouselLeftSlider = document.getElementsByClassName('js-leftSwitch');
-var carouselRightSlider = document.getElementsByClassName('js-rightSwitch');
+var carouselArea = document.getElementById('js-carousel');
+var leftSlider = document.getElementsByClassName('js-leftSwitch');
+var rightSlider = document.getElementsByClassName('js-rightSwitch');
 var reg = document.getElementById('js-numberOfReg');
 var numberOfReg = 1;
+var phoneImages = [
+	'url(images/phone-blue.jpg)',
+	'url(images/phone-green.jpg)',
+	'url(images/phone-red.jpg)',
+	'url(images/phone-white.jpg)',
+	'url(images/phone-yellow.jpg)'
+];
+var indexOfPhoneArray = 0;
 
-//			scrollspy
-$(function() {
+//		CAROUSEL
+function viewSlide() {
+	carouselArea.style.backgroundImage = phoneImages[indexOfPhoneArray];
+};
+//			phone carousel switches	
+rightSlider[0].addEventListener('click', function () {
+	indexOfPhoneArray++;
+	numberOfReg++;
+	if (numberOfReg == 6 && indexOfPhoneArray == 5) {
+		numberOfReg = 1;
+		indexOfPhoneArray = 0;
+	}
+	reg.innerHTML = numberOfReg;
+	viewSlide();
+});
+leftSlider[0].addEventListener('click', function () {
+	indexOfPhoneArray--;
+	numberOfReg--;
+	if (numberOfReg == 0 && indexOfPhoneArray == -1) {
+		numberOfReg = 5;
+		indexOfPhoneArray = 4;
+	}
+	reg.innerHTML = numberOfReg;
+	viewSlide();
+});
+
+//			SCROLLSPY
+$(function () {
 	$('body').scrollspy({ target: '#navigation-bar' });
 
-	$(window).scroll(function(){
-	    changeNavbar();
+	$(window).scroll(function () {
+		changeNavbar();
 	});
 
 	function changeNavbar() {
@@ -19,25 +54,5 @@ $(function() {
 		} else {
 			$('nav').removeClass('sticky');
 		}
-    }
-});
-//options carousel
-$(function() {
-	$(".carousel").carousel("pause");
-});
-
-//			phone carousel switches	
-carouselRightSlider[0].addEventListener('click', function() {
-	numberOfReg++;
-	if (numberOfReg == 6) {
-		numberOfReg = 1;
 	}
-	reg.innerHTML = numberOfReg;
-});
-carouselLeftSlider[0].addEventListener('click', function() {
-	numberOfReg--;
-	if (numberOfReg == 0) {
-		numberOfReg = 5;
-	}
-	reg.innerHTML = numberOfReg;
 });
