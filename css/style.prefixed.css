@@ -224,7 +224,7 @@ header {
   .our-community-section .our-community-headline {
     text-align: center; }
     .our-community-section .our-community-headline img {
-      margin-top: 25px;
+      margin-top: 55px;
       margin-bottom: 31px; }
     .our-community-section .our-community-headline h4 {
       color: #373737 !important;
@@ -241,9 +241,51 @@ header {
       font-size: 10px;
       font-weight: 500;
       letter-spacing: 1.5px; }
+  .our-community-section .double-carousel div {
+    text-align: right; }
+    .our-community-section .double-carousel div span {
+      margin-right: 10px; }
+      .our-community-section .double-carousel div span a {
+        text-decoration: none;
+        cursor: pointer; }
+        .our-community-section .double-carousel div span a .fa {
+          font-size: 27px !important;
+          color: #373737;
+          margin-right: 10px; }
   .our-community-section .double-carousel .carousel .carousel-inner .layoutImages .imgSize {
     width: 370px;
     height: 244px;
     margin: 0 10px; }
+
+/* ---------------------------------------------------------
+            SUBSCRIBE SECTION
+------------------------------------------------ */
+section .subscribe-section-background {
+  width: 100%;
+  height: 780px;
+  background-image: url("../images/livello-3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  section .subscribe-section-background h3 {
+    color: #ffffff;
+    font-family: "Gotham Rounded Medium";
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px; }
+  section .subscribe-section-background .email-form {
+    width: 280px;
+    height: 60px;
+    border-radius: 3px 0 0 3px;
+    background-color: #ffffff;
+    color: #373737 !important;
+    font-family: "Gotham Rounded Medium";
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    padding-left: 20px; }
 
 /*# sourceMappingURL=style.prefixed.css.map */
