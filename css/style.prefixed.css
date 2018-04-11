@@ -286,6 +286,13 @@ section .subscribe-section-background {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2.4px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    border: none; }
+  section .subscribe-section-background .submit-button {
+    width: 63px;
+    height: 60px;
+    border-radius: 0 3px 3px 0;
+    background-color: #16a085 !important;
+    border: none; }
 
 /*# sourceMappingURL=style.prefixed.css.map */

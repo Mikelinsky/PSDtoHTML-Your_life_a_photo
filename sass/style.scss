@@ -360,6 +360,14 @@ section {
             text-transform: uppercase;
             letter-spacing: 2.4px;
             padding-left: 20px; 
+            border: none;
+        }
+        .submit-button {
+            width: 63px;
+            height: 60px;
+            border-radius: 0 3px 3px 0;
+            background-color: $colorSmallHeaders;
+            border: none;
         }
     }
 }
