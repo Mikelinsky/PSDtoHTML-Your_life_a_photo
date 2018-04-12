@@ -54,8 +54,11 @@ header {
     nav {
         height: 130px;
         transition-duration: $transitionDuration;
+        .navbar-toggler-icon {
+            
+        }
         div {
-            ul {
+            .navbar-nav {
                 padding: 0;
                 list-style-type: none;
                 margin: 0;
