@@ -451,30 +451,33 @@ section {
 }
 
 footer {
+    padding: 42px 0 35px 0;
     .row {
-        .col-xl-11 {
+        .col-xl-10 {
             h4 {
-                width: 299px;
-                height: 14px;
                 color: $colorParagraph;
                 font-family: $fontMedium;
                 font-size: 14px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 2.1px;
-                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    transition-duration: $transitionDuration;
+                    &:hover {
+                        color: $colorSmallHeaders;
+                    }
+                }
                 span {
                     color: $colorSmallHeaders;
                 }
             }
             p {
-                width: 299px;
-                height: 14px;
                 color: $colorParagraph;
                 font-family: $fontMedium;
                 font-size: 14px;
                 font-weight: 700;
-                text-transform: uppercase;
                 letter-spacing: 2.1px;
             }
         }
