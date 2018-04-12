@@ -54,32 +54,34 @@ header {
     nav {
         height: 130px;
         transition-duration: $transitionDuration;
-        ul {
-            padding: 0;
-            list-style-type: none;
-            margin: 0;
-            img {
-                margin: 0 70px;
-            }
-            li {
-                margin: 0 30px;
-                display: inline-block;
-                transition-duration: $transitionDuration;
-                &:hover {
-                    transform: scale(1.1);
+        div {
+            ul {
+                padding: 0;
+                list-style-type: none;
+                margin: 0;
+                img {
+                    margin: 0 70px;
                 }
-                &:hover a {
-                    color: $colorSmallHeaders;
-                }
-                a {
-                    letter-spacing: 2.4px;
-                    font-size: 16px;
-                    color: $colorOnDarkBackground;
-                    text-transform: uppercase;
-                    font-family: "Gotham Rounded Medium";
-                    font-weight: 700;
-                    cursor: pointer;
+                li {
+                    margin: 0 30px;
+                    display: inline-block;
                     transition-duration: $transitionDuration;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    &:hover a {
+                        color: $colorSmallHeaders;
+                    }
+                    a {
+                        letter-spacing: 2.4px;
+                        font-size: 16px;
+                        color: $colorOnDarkBackground;
+                        text-transform: uppercase;
+                        font-family: "Gotham Rounded Medium";
+                        font-weight: 700;
+                        cursor: pointer;
+                        transition-duration: $transitionDuration;
+                    }
                 }
             }
         }
