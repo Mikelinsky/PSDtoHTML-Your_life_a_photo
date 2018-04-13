@@ -329,7 +329,7 @@ header {
                     .imgSize {
                         width: 370px;
                         height: 244px;
-                        margin: 0 10px;
+                        margin: 5px 10px;
                     }
                 }
             }
@@ -483,3 +483,93 @@ footer {
         }
     }
 }
+
+/*-----------------------------------------------------------------------------
+                    MEDIA QUERIES
+-------------------------------------------------------------------- */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    //                    HAND SECTION 
+    .handWithPhone-section {
+        padding: 120px 50px;
+        height: 90vh;
+        div {
+            h4 {
+                br {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 14px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    } //                  CAROUSEL WITH PHONE
+    .carousel-section {
+        .design-container {
+            padding: 105px 0 52px 0;
+            p {
+                font-size: 14px;
+            }
+            .switch {
+                font-size: 16px;
+            }
+        }
+        .carousel-size {
+            //width: 250px;
+            //height: 350px;
+            position: static; 
+            //background-size: 250px 350px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    //                    HAND SECTION  
+    .handWithPhone-section {
+        padding: 120px 50px;
+        height: 90vh;
+        div {
+            h4 {
+                br {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 14px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    } //                  CAROUSEL WITH PHONE
+     .carousel-section {
+        .design-container {
+            padding: 105px 0 52px 0;
+            p {
+                font-size: 14px;
+            }
+            .switch {
+                font-size: 16px;
+            }
+        }
+        .carousel-size {
+            position: static; 
+        }
+    }
+}
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

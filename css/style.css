@@ -255,7 +255,7 @@ header {
   .our-community-section .double-carousel .carousel .carousel-inner .layoutImages .imgSize {
     width: 370px;
     height: 244px;
-    margin: 0 10px; }
+    margin: 5px 10px; }
 
 /* ---------------------------------------------------------
             SUBSCRIBE SECTION
@@ -374,5 +374,47 @@ footer {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2.1px; }
+
+/*-----------------------------------------------------------------------------
+                    MEDIA QUERIES
+-------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  .handWithPhone-section {
+    padding: 120px 50px;
+    height: 90vh; }
+    .handWithPhone-section div h4 br {
+      display: none; }
+    .handWithPhone-section div p {
+      font-size: 14px; }
+      .handWithPhone-section div p br {
+        display: none; }
+
+  .carousel-section .design-container {
+    padding: 105px 0 52px 0; }
+    .carousel-section .design-container p {
+      font-size: 14px; }
+    .carousel-section .design-container .switch {
+      font-size: 16px; }
+  .carousel-section .carousel-size {
+    position: static; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .handWithPhone-section {
+    padding: 120px 50px;
+    height: 90vh; }
+    .handWithPhone-section div h4 br {
+      display: none; }
+    .handWithPhone-section div p {
+      font-size: 14px; }
+      .handWithPhone-section div p br {
+        display: none; }
+
+  .carousel-section .design-container {
+    padding: 105px 0 52px 0; }
+    .carousel-section .design-container p {
+      font-size: 14px; }
+    .carousel-section .design-container .switch {
+      font-size: 16px; }
+  .carousel-section .carousel-size {
+    position: static; } }
 
 /*# sourceMappingURL=style.css.map */
