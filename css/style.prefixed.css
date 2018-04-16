@@ -377,12 +377,21 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.1px; }
-    footer .row .col-xl-10 h4 a {
+    footer .row .col-xl-10 h4 .footer-links {
       text-decoration: none;
       color: inherit;
-      transition-duration: 0.5s; }
-      footer .row .col-xl-10 h4 a:hover {
+      transition-duration: 0.5s;
+      position: relative; }
+      footer .row .col-xl-10 h4 .footer-links:hover {
         color: #16a085 !important; }
+    footer .row .col-xl-10 h4 .footer-links::before {
+      content: " ";
+      position: absolute;
+      bottom: -3px;
+      background-color: #16a085 !important;
+      height: 2px;
+      width: 100%;
+      visibility: hidden; }
     footer .row .col-xl-10 h4 span {
       color: #16a085 !important; }
   footer .row .col-xl-10 p {

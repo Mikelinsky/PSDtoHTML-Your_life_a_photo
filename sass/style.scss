@@ -487,13 +487,23 @@ footer {
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 2.1px;
-                a {
+                .footer-links {
                     text-decoration: none;
                     color: inherit;
                     transition-duration: $transitionDuration;
+                    position: relative;
                     &:hover {
                         color: $colorSmallHeaders;
                     }
+                }
+                .footer-links::before {
+                    content: " ";
+                    position: absolute;
+                    bottom: -3px;
+                    background-color: $colorSmallHeaders;
+                    height: 2px;
+                    width: 100%;
+                    visibility: hidden;
                 }
                 span {
                     color: $colorSmallHeaders;
