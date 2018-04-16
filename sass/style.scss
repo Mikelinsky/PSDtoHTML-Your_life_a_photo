@@ -33,6 +33,10 @@ $colorSmallHeaders: #16a085 !important;
 $colorParagraph: #373737 !important;
 $backgroundColor:#f5f6f7 !important;
 $transitionDuration: 0.5s;
+$navbarColor: rgba(29,
+21,
+32,
+0.8);
 $fontMedium: "Gotham Rounded Medium";
 $fontBook: "Gotham Rounded Book";
 $fontBold: "Gotham Rounded Bold";
@@ -48,7 +52,7 @@ header {
     background-position: center;
     position: relative;
     .sticky {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: $navbarColor;
         height: 90px;
     } //                      NAVIGATION
     nav {
@@ -57,6 +61,10 @@ header {
         .hidden-img {
             display: none;
             margin: 10px;
+            img {
+                height: 43px;
+                width: 45px;
+            }
             a {
                 letter-spacing: 2.4px;
                 font-size: 16px;
@@ -67,6 +75,7 @@ header {
                 cursor: pointer;
                 transition-duration: $transitionDuration;
                 margin-left: 20px;
+                text-decoration: none;
             }
         }
         div {
@@ -92,7 +101,7 @@ header {
                         font-size: 16px;
                         color: $colorOnDarkBackground;
                         text-transform: uppercase;
-                        font-family: "Gotham Rounded Medium";
+                        font-family: $fontMedium;
                         font-weight: 700;
                         cursor: pointer;
                         transition-duration: $transitionDuration;
@@ -119,7 +128,7 @@ header {
             font-weight: 700px;
             text-transform: uppercase;
             letter-spacing: 5.4px;
-            font-family: "Gotham Rounded Bold";
+            font-family: $fontBold;
         }
         button {
             width: 166px;
@@ -325,7 +334,7 @@ header {
         }
     }
     .double-carousel {
-        div {
+        .sliders {
             text-align: right;
             span {
                 margin-right: 10px;
@@ -378,7 +387,7 @@ section {
         .email-form {
             width: 280px;
             height: 60px;
-            background-color: #ffffff;
+            background-color: $colorOnDarkBackground;
             color: $colorParagraph;
             font-family: $fontMedium;
             border-radius: 3px 0 0 3px;
@@ -408,7 +417,7 @@ section {
             DOWNLOAD IT SECTION
 ----------------------------------------------------------- */
 
-.download-it {
+#download-it {
     background-color: $backgroundColor;
     padding-top: 90px;
     padding-bottom: 116px;
@@ -446,7 +455,7 @@ section {
             border-radius: 3px 0 0 3px;
             background-color: #1abc9c;
             border: none;
-            color: #ffffff;
+            color: $colorOnDarkBackground;
             font-family: $fontMedium;
             font-size: 16px;
             font-weight: 700;
@@ -501,56 +510,44 @@ footer {
     }
 }
 
+/* ------------------------------------------------------------------
+                    MEDIA
+--------------------------------------------------------- */
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-    //                      NAVIGATION
+    //                      HERDAER
     header {
         .sticky {
             height: auto;
-        }
+        } //                      NAVIGATION
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: $navbarColor;
             height: auto;
             .hidden-img {
                 display: inline-block;
-                img {
-                    height: 43px;
-                    width: 45px;
-                }
+                margin: 3px;
             }
             div {
                 .navbar-nav {
                     img {
                         display: none;
                     }
-                    li {
-                        margin: 3px 30px;
-                        display: inline-block;
-                        transition-duration: $transitionDuration;
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                        &:hover a {
-                            color: $colorSmallHeaders;
-                        }
-                        a {
-                            letter-spacing: 2.4px;
-                            font-size: 16px;
-                            color: $colorOnDarkBackground;
-                            text-transform: uppercase;
-                            font-family: "Gotham Rounded Medium";
-                            font-weight: 700;
-                            cursor: pointer;
-                            transition-duration: $transitionDuration;
-                        }
-                    }
                 }
+            }
+        } //                  headline
+        .headline {
+            p {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 30px;
             }
         }
     } //                    HAND SECTION 
     .handWithPhone-section {
-        padding: 120px 50px;
-        height: 90vh;
+        padding: 50px 30px;
+        height: 140vh;
         div {
             h4 {
                 br {
@@ -567,21 +564,96 @@ footer {
     } //                  CAROUSEL WITH PHONE
     .carousel-section {
         .design-container {
-            padding: 105px 0 52px 0;
+            padding: 50px 15px 20px 15px;
+            h4 {
+                margin-bottom: 15px;
+            }
             p {
                 font-size: 14px;
+                br {
+                    display: none;
+                }
             }
             .switch {
                 font-size: 16px;
+                text-align: center;
             }
         }
         .carousel-size {
-            //width: 250px;
-            //height: 350px;
-            position: static; //background-size: 250px 350px;
+            position: static;
+            background-size: 250px 350px;
+            width: 250px;
+            height: 350px;
         }
-    }
+    } //              MINI CAROUSEL 
+    .our-community-section {
+        padding: 50px 0;
+        .our-community-headline {
+            img {
+                margin-top: 10px;
+                margin-bottom: 31px;
+            }
+        }
+        .double-carousel {
+            .sliders {
+                text-align: center;
+            }
+            .carousel {
+                .carousel-inner {
+                    .layoutImages {
+                        .media-centering-img {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }//             SUBSCRIBE SECTION
+    section {
+        .subscribe-section-background {
+            h3 {
+                font-size: 22px;
+                text-align: center;
+            }
+            .email-form {
+                width: 250px;
+                height: 40px;
+            }
+            .submit-button {
+                width: 50px;
+                height: 40px;
+            }
+        }
+    } //            DOWNLOAD IT SECTION
+    #download-it {
+        padding-top: 50px;
+        padding-bottom: 50px; 
+        .download-it-headline {
+            text-align: center;
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+        .margin-right {
+            margin: 0 0 15px 0; 
+        }
+        .button-container {
+            button {
+                width: 240px;
+                height: 56px;
+                font-size: 16px;
+            }
+            span {
+                width: 56px;
+                height: 56px;
+            }
+        }
+    }//              FOOTER
+
 }
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -591,7 +663,7 @@ footer {
             height: auto;
         }
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: $navbarColor;
             height: auto;
             .hidden-img {
                 display: inline-block;
@@ -671,7 +743,7 @@ footer {
             height: auto;
         }
         nav {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: $navbarColor;
             height: auto;
             .hidden-img {
                 display: inline-block;
@@ -710,8 +782,11 @@ footer {
             }
         }
     }
-} // Large devices (desktops, 992px and up)
+} 
+// Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+}
