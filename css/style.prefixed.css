@@ -32,6 +32,19 @@ header {
   header nav {
     height: 130px;
     transition-duration: 0.5s; }
+    header nav .hidden-img {
+      display: none;
+      margin: 10px; }
+      header nav .hidden-img a {
+        letter-spacing: 2.4px;
+        font-size: 16px;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        font-family: "Gotham Rounded Medium";
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 0.5s;
+        margin-left: 20px; }
     header nav div .navbar-nav {
       padding: 0;
       list-style-type: none;
@@ -374,5 +387,96 @@ footer {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 2.1px; }
+
+@media (max-width: 575.98px) {
+  header .sticky {
+    height: auto; }
+  header nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto; }
+    header nav .hidden-img {
+      display: inline-block; }
+      header nav .hidden-img img {
+        height: 43px;
+        width: 45px; }
+    header nav div .navbar-nav img {
+      display: none; }
+    header nav div .navbar-nav li {
+      margin: 3px 30px;
+      display: inline-block;
+      transition-duration: 0.5s; }
+      header nav div .navbar-nav li:hover {
+        transform: scale(1.1); }
+      header nav div .navbar-nav li:hover a {
+        color: #16a085 !important; }
+      header nav div .navbar-nav li a {
+        letter-spacing: 2.4px;
+        font-size: 16px;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        font-family: "Gotham Rounded Medium";
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 0.5s; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header .sticky {
+    height: auto; }
+  header nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto; }
+    header nav .hidden-img {
+      display: inline-block; }
+      header nav .hidden-img img {
+        height: 43px;
+        width: 45px; }
+    header nav div .navbar-nav img {
+      display: none; }
+    header nav div .navbar-nav li {
+      margin: 3px 30px;
+      display: inline-block;
+      transition-duration: 0.5s; }
+      header nav div .navbar-nav li:hover {
+        transform: scale(1.1); }
+      header nav div .navbar-nav li:hover a {
+        color: #16a085 !important; }
+      header nav div .navbar-nav li a {
+        letter-spacing: 2.4px;
+        font-size: 16px;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        font-family: "Gotham Rounded Medium";
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 0.5s; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .sticky {
+    height: auto; }
+  header nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto; }
+    header nav .hidden-img {
+      display: inline-block; }
+      header nav .hidden-img img {
+        height: 43px;
+        width: 45px; }
+    header nav div .navbar-nav img {
+      display: none; }
+    header nav div .navbar-nav li {
+      margin: 3px 30px;
+      display: inline-block;
+      transition-duration: 0.5s; }
+      header nav div .navbar-nav li:hover {
+        transform: scale(1.1); }
+      header nav div .navbar-nav li:hover a {
+        color: #16a085 !important; }
+      header nav div .navbar-nav li a {
+        letter-spacing: 2.4px;
+        font-size: 16px;
+        color: #ffffff !important;
+        text-transform: uppercase;
+        font-family: "Gotham Rounded Medium";
+        font-weight: 700;
+        cursor: pointer;
+        transition-duration: 0.5s; } }
 
 /*# sourceMappingURL=style.prefixed.css.map */
