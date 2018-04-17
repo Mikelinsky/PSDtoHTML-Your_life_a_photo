@@ -17,6 +17,51 @@
 * {
   box-sizing: border-box; }
 
+/*---------------------------------------------------------------
+                SHADOW HOVER
+----------------------------------------------------- */
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 80%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity; }
+
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */ }
+
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */ }
+
 /*------------------------------------------------------------------
                             HEADER
 ----------------------------------------------------------------*/
@@ -390,7 +435,7 @@ footer {
     footer .row .col-xl-10 h4 .link-with-underlining .footer-links::before {
       content: " ";
       position: absolute;
-      bottom: -2px;
+      bottom: -3px;
       background-color: #16a085 !important;
       height: 2px;
       width: 100%;
@@ -420,6 +465,8 @@ footer {
       margin: 3px; }
     header nav div .navbar-nav img {
       display: none; }
+    header nav div .navbar-nav li {
+      margin: 4px 30px; }
   header .headline p {
     font-size: 14px; }
   header .headline h1 {
@@ -487,7 +534,16 @@ footer {
       font-size: 16px; }
     #download-it .button-container span {
       width: 56px;
-      height: 56px; } }
+      height: 56px; }
+
+  footer {
+    padding: 30px; }
+    footer .row .col-xl-10 h4 {
+      font-size: 13px; }
+    footer .row .col-xl-10 p {
+      font-size: 11px; }
+    footer .row .col-xl-2 {
+      text-align: center; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   header .sticky {
     height: auto; }
@@ -502,7 +558,7 @@ footer {
     header nav div .navbar-nav img {
       display: none; }
     header nav div .navbar-nav li {
-      margin: 3px 30px;
+      margin: 4px 30px;
       display: inline-block;
       transition-duration: 0.5s; }
       header nav div .navbar-nav li:hover {
@@ -549,7 +605,7 @@ footer {
     header nav div .navbar-nav img {
       display: none; }
     header nav div .navbar-nav li {
-      margin: 3px 30px;
+      margin: 4px 30px;
       display: inline-block;
       transition-duration: 0.5s; }
       header nav div .navbar-nav li:hover {
