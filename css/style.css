@@ -377,22 +377,27 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2.1px; }
-    footer .row .col-xl-10 h4 .footer-links {
+    footer .row .col-xl-10 h4 .link-with-underlining:hover .footer-links {
+      color: #16a085 !important; }
+    footer .row .col-xl-10 h4 .link-with-underlining:hover .footer-links::before {
+      visibility: visible;
+      transform: scaleX(1); }
+    footer .row .col-xl-10 h4 .link-with-underlining .footer-links {
       text-decoration: none;
       color: inherit;
       transition-duration: 0.5s;
       position: relative; }
-      footer .row .col-xl-10 h4 .footer-links:hover {
-        color: #16a085 !important; }
-    footer .row .col-xl-10 h4 .footer-links::before {
+    footer .row .col-xl-10 h4 .link-with-underlining .footer-links::before {
       content: " ";
       position: absolute;
-      bottom: -3px;
+      bottom: -2px;
       background-color: #16a085 !important;
       height: 2px;
       width: 100%;
-      visibility: hidden; }
-    footer .row .col-xl-10 h4 span {
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s; }
+    footer .row .col-xl-10 h4 .pipe {
       color: #16a085 !important; }
   footer .row .col-xl-10 p {
     color: #373737 !important;

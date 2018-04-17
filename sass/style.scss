@@ -487,25 +487,33 @@ footer {
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 2.1px;
-                .footer-links {
-                    text-decoration: none;
-                    color: inherit;
-                    transition-duration: $transitionDuration;
-                    position: relative;
-                    &:hover {
+                .link-with-underlining {  
+                    &:hover .footer-links {
                         color: $colorSmallHeaders;
                     }
+                    &:hover .footer-links::before {
+                        visibility: visible;
+                        transform: scaleX(1);
+                    }
+                    .footer-links { 
+                        text-decoration: none;
+                        color: inherit;
+                        transition-duration: $transitionDuration;
+                        position: relative;
+                    }
+                    .footer-links::before {
+                        content: " ";
+                        position: absolute;
+                        bottom: -2px;
+                        background-color: $colorSmallHeaders;
+                        height: 2px;
+                        width: 100%; 
+                        visibility: hidden;
+                        transform: scaleX(0);
+                        transition: all 0.3s ease-in-out 0s;
+                    }
                 }
-                .footer-links::before {
-                    content: " ";
-                    position: absolute;
-                    bottom: -3px;
-                    background-color: $colorSmallHeaders;
-                    height: 2px;
-                    width: 100%;
-                    visibility: hidden;
-                }
-                span {
+                .pipe {
                     color: $colorSmallHeaders;
                 }
             }
