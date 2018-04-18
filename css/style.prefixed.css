@@ -260,7 +260,7 @@ header {
       text-transform: uppercase; }
     .carousel-section .design-container .switch .fa {
       font-size: 27px !important;
-      color: #373737;
+      color: #000000;
       margin-right: 10px; }
     .carousel-section .design-container .switch a {
       text-decoration: none;
@@ -489,6 +489,8 @@ footer {
     .carousel-section .design-container .switch {
       font-size: 16px;
       text-align: center; }
+      .carousel-section .design-container .switch .leftSwitch {
+        margin-right: 8px; }
   .carousel-section .carousel-size {
     position: static;
     background-size: 250px 350px;
@@ -545,28 +547,10 @@ footer {
     height: auto; }
     header nav .hidden-img {
       display: inline-block; }
-      header nav .hidden-img img {
-        height: 43px;
-        width: 45px; }
     header nav div .navbar-nav img {
       display: none; }
     header nav div .navbar-nav li {
-      margin: 4px 30px;
-      display: inline-block;
-      transition-duration: 0.5s; }
-      header nav div .navbar-nav li:hover {
-        transform: scale(1.1); }
-      header nav div .navbar-nav li:hover a {
-        color: #16a085 !important; }
-      header nav div .navbar-nav li a {
-        letter-spacing: 2.4px;
-        font-size: 16px;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        font-family: "Gotham Rounded Medium";
-        font-weight: 700;
-        cursor: pointer;
-        transition-duration: 0.5s; }
+      margin: 4px 30px; }
 
   .handWithPhone-section {
     padding: 50px 30px;
@@ -584,7 +568,7 @@ footer {
       font-size: 14px; }
     .carousel-section .design-container .switch {
       font-size: 16px; }
-      .carousel-section .design-container .switch span .prev {
+      .carousel-section .design-container .switch .leftSwitch {
         margin-right: 8px; }
   .carousel-section .carousel-size {
     position: static; }
@@ -622,27 +606,78 @@ footer {
     height: auto; }
     header nav .hidden-img {
       display: inline-block; }
-      header nav .hidden-img img {
-        height: 43px;
-        width: 45px; }
     header nav div .navbar-nav img {
       display: none; }
     header nav div .navbar-nav li {
-      margin: 4px 30px;
-      display: inline-block;
-      transition-duration: 0.5s; }
-      header nav div .navbar-nav li:hover {
-        transform: scale(1.1); }
-      header nav div .navbar-nav li:hover a {
-        color: #16a085 !important; }
-      header nav div .navbar-nav li a {
-        letter-spacing: 2.4px;
-        font-size: 16px;
-        color: #ffffff !important;
-        text-transform: uppercase;
-        font-family: "Gotham Rounded Medium";
-        font-weight: 700;
-        cursor: pointer;
-        transition-duration: 0.5s; } }
+      margin: 4px 30px; }
+
+  .handWithPhone-section {
+    padding: 50px 30px;
+    height: 110vh; }
+    .handWithPhone-section div h4 br {
+      display: none; }
+    .handWithPhone-section div p {
+      font-size: 14px; }
+      .handWithPhone-section div p br {
+        display: none; }
+
+  .carousel-section .design-container {
+    padding: 60px 15px 52px 15px; }
+    .carousel-section .design-container p {
+      font-size: 14px; }
+    .carousel-section .design-container .switch {
+      font-size: 16px; }
+      .carousel-section .design-container .switch .leftSwitch {
+        margin-right: 8px; }
+
+  .our-community-section {
+    padding: 50px 0; }
+    .our-community-section .our-community-headline img {
+      margin-top: 10px;
+      margin-bottom: 31px; }
+    .our-community-section .double-carousel .sliders span {
+      margin-right: 40px; }
+      .our-community-section .double-carousel .sliders span .prev {
+        margin-right: 8px; }
+    .our-community-section .double-carousel .carousel .carousel-inner .layoutImages .media-centering-img {
+      text-align: center; }
+
+  /*unnecessary media*/
+  #download-it {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    #download-it .download-it-headline {
+      text-align: center; }
+      #download-it .download-it-headline p br {
+        display: none; }
+
+  footer {
+    padding: 30px; }
+    footer .row .col-xl-2 {
+      text-align: center; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /*unnecessary media*/
+  .handWithPhone-section {
+    height: 90vh; }
+
+  .carousel-section .design-container p br {
+    display: none; }
+
+  .our-community-section {
+    padding: 50px 0; }
+    .our-community-section .our-community-headline img {
+      margin-top: 10px;
+      margin-bottom: 31px; }
+    .our-community-section .double-carousel .sliders span {
+      margin-right: 130px; }
+    .our-community-section .double-carousel .carousel .carousel-inner .layoutImages .media-centering-img {
+      text-align: center; }
+
+  /*unnecessary media*/
+  #download-it .download-it-headline {
+    text-align: center; }
+
+  footer .row .col-xl-2 {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.prefixed.css.map */

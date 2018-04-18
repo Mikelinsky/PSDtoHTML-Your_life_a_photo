@@ -338,7 +338,7 @@ header {
             }
             .fa {
                 font-size: 27px !important;
-                color: #373737;
+                color: #000000;
                 margin-right: 10px;
             }
             a {
@@ -653,6 +653,9 @@ footer {
             .switch {
                 font-size: 16px;
                 text-align: center;
+                .leftSwitch {
+                    margin-right: 8px;
+                }
             }
         }
         .carousel-size {
@@ -705,7 +708,7 @@ footer {
                 height: 40px;
             }
         }
-    } //            DOWNLOAD IT SECTION
+    } //            DOWNLOAD IT
     #download-it {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -756,10 +759,6 @@ footer {
             height: auto;
             .hidden-img {
                 display: inline-block;
-                img {
-                    height: 43px;
-                    width: 45px;
-                }
             }
             div {
                 .navbar-nav {
@@ -768,29 +767,11 @@ footer {
                     }
                     li {
                         margin: 4px 30px;
-                        display: inline-block;
-                        transition-duration: $transitionDuration;
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                        &:hover a {
-                            color: $colorSmallHeaders;
-                        }
-                        a {
-                            letter-spacing: 2.4px;
-                            font-size: 16px;
-                            color: $colorOnDarkBackground;
-                            text-transform: uppercase;
-                            font-family: "Gotham Rounded Medium";
-                            font-weight: 700;
-                            cursor: pointer;
-                            transition-duration: $transitionDuration;
-                        }
                     }
                 }
             }
         }
-    } //                    HAND SECTION  
+    } //                    HAND & PHONE
     .handWithPhone-section {
         padding: 50px 30px;
         height: 120vh;
@@ -816,10 +797,8 @@ footer {
             }
             .switch {
                 font-size: 16px;
-                span {
-                    .prev {
-                        margin-right: 8px;
-                    }
+                .leftSwitch {
+                    margin-right: 8px;
                 }
             }
         }
@@ -893,10 +872,6 @@ footer {
             height: auto;
             .hidden-img {
                 display: inline-block;
-                img {
-                    height: 43px;
-                    width: 45px;
-                }
             }
             div {
                 .navbar-nav {
@@ -905,33 +880,148 @@ footer {
                     }
                     li {
                         margin: 4px 30px;
-                        display: inline-block;
-                        transition-duration: $transitionDuration;
-                        &:hover {
-                            transform: scale(1.1);
-                        }
-                        &:hover a {
-                            color: $colorSmallHeaders;
-                        }
-                        a {
-                            letter-spacing: 2.4px;
-                            font-size: 16px;
-                            color: $colorOnDarkBackground;
-                            text-transform: uppercase;
-                            font-family: "Gotham Rounded Medium";
-                            font-weight: 700;
-                            cursor: pointer;
-                            transition-duration: $transitionDuration;
+                    }
+                }
+            }
+        }
+    }//                    HAND & PHONE
+    .handWithPhone-section {
+        padding: 50px 30px;
+        height: 110vh;
+        div {
+            h4 {
+                br {
+                    display: none;
+                }
+            }
+            p {
+                font-size: 14px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }//                  CAROUSEL WITH PHONE
+    .carousel-section {
+        .design-container {
+            padding: 60px 15px 52px 15px;
+            p {
+                font-size: 14px;
+            }
+            .switch {
+                font-size: 16px;
+                .leftSwitch {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }//                 MINI CAROUSEL
+    .our-community-section { 
+        padding: 50px 0;
+        .our-community-headline {
+            img {
+                margin-top: 10px;
+                margin-bottom: 31px;
+            }
+        }
+        .double-carousel {
+            .sliders {
+                span {
+                    margin-right: 40px;
+                    .prev {
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .carousel {
+                .carousel-inner {
+                    .layoutImages {
+                        .media-centering-img {
+                            text-align: center;
                         }
                     }
                 }
+            }
+        }
+    }//             SUBSCRIBE SECTION
+                /*unnecessary media*/
+    //            DOWNLOAD IT SECTION
+    #download-it {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .download-it-headline {
+            text-align: center;
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }//             FOOTER
+    footer {
+        padding: 30px;
+        .row {
+            .col-xl-2 {
+                text-align: center;
             }
         }
     }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+        //                    NAVIGATION
+                        /*unnecessary media*/
+//                    HAND & PHONE
+    .handWithPhone-section {
+        height: 90vh;
+    }//                  CAROUSEL WITH PHONE
+    .carousel-section {
+        .design-container {
+            p {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }//                 MINI CAROUSEL
+    .our-community-section { 
+        padding: 50px 0;
+        .our-community-headline {
+            img {
+                margin-top: 10px;
+                margin-bottom: 31px;
+            }
+        }
+        .double-carousel {
+            .sliders {
+                span {
+                    margin-right: 130px;
+                }
+            }
+            .carousel {
+                .carousel-inner {
+                    .layoutImages {
+                        .media-centering-img {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }//             SUBSCRIBE SECTION
+                /*unnecessary media*/
+    //            DOWNLOAD IT SECTION
+    #download-it {
+        .download-it-headline {
+            text-align: center;
+        }
+    }//             FOOTER
+    footer {
+        .row {
+            .col-xl-2 {
+                text-align: center;
+            }
+        }
+    }
+}
