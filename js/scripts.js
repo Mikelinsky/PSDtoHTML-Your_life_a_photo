@@ -16,7 +16,7 @@ var indexOfPhoneArray = 0;
 //		CAROUSEL
 function viewSlide() {
 	carouselArea.style.backgroundImage = phoneImages[indexOfPhoneArray];
-};
+}
 //			phone carousel switches	
 rightSlider[0].addEventListener('click', function () {
 	indexOfPhoneArray++;
